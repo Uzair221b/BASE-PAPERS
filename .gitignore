@@ -1,0 +1,224 @@
+# Glaucoma Detection Project - Git Ignore File
+
+# =============================================================================
+# IMAGE FILES (Too large for GitHub - keep local or use cloud storage)
+# =============================================================================
+
+# All image files
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+*.tif
+
+# Processed image folders
+preprocessing/cleaned_*/
+preprocessing/*/cleaned/
+preprocessing/*_cleaned/
+preprocessed_images/
+processed_output/
+processed_demo/
+test_data/
+
+# Specific large folders
+preprocessing/glaucoma/
+preprocessing/Test/
+preprocessing/training_set/
+preprocessing/RIM-ONE/
+preprocessing/full-fundus/
+
+# =============================================================================
+# MODEL FILES (Large trained models)
+# =============================================================================
+
+*.h5
+*.keras
+*.hdf5
+*.pb
+*.ckpt
+*.pth
+*.pt
+*.weights
+best_model.*
+glaucoma_model.*
+trained_model.*
+checkpoints/
+models/
+saved_models/
+
+# =============================================================================
+# DATA FILES
+# =============================================================================
+
+# CSV outputs (can regenerate)
+*.csv
+classifications*.csv
+results*.csv
+
+# Numpy arrays
+*.npy
+*.npz
+
+# Pickle files
+*.pkl
+*.pickle
+
+# Text extraction files
+paper*_text.txt
+extract_pdf_text.py
+
+# =============================================================================
+# PYTHON
+# =============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# =============================================================================
+# IDE / EDITOR
+# =============================================================================
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# =============================================================================
+# OPERATING SYSTEM
+# =============================================================================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+.directory
+
+# =============================================================================
+# TEMPORARY FILES
+# =============================================================================
+
+# Logs
+*.log
+logs/
+*.out
+
+# Temp files
+temp/
+tmp/
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# =============================================================================
+# PROJECT SPECIFIC
+# =============================================================================
+
+# Large PDF papers (optional - can include small ones)
+*.pdf
+
+# PowerPoint presentations
+*.pptx
+*.ppt
+
+# HTML files
+*.htm
+*.html
+
+# Text documents
+*.txt
+!requirements.txt
+!RESUME_PROMPT.txt
+
+# Backup files
+*.bak
+*.backup
+
+# =============================================================================
+# KEEP THESE (Important files to include)
+# =============================================================================
+
+# DO include:
+# - *.py (Python scripts)
+# - *.md (Documentation)
+# - requirements.txt
+# - .gitignore
+# - LICENSE (if you create one)
+# - README.md
+
+# =============================================================================
+# END
+# =============================================================================
+
