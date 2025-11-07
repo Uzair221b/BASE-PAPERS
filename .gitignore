@@ -13,14 +13,18 @@
 *.tiff
 *.tif
 
-# Processed image folders
+# But INCLUDE small demo/test folders (exceptions)
+!processed_demo/*.png
+!processed_demo/*.jpg
+!test_data/*.png
+!test_data/*.jpg
+
+# Processed image folders (large datasets excluded)
 preprocessing/cleaned_*/
 preprocessing/*/cleaned/
 preprocessing/*_cleaned/
 preprocessed_images/
 processed_output/
-processed_demo/
-test_data/
 
 # Specific large folders
 preprocessing/glaucoma/
