@@ -116,16 +116,33 @@ glaucoma-detection-preprocessing/
 │   ├── requirements.txt             # Dependencies
 │   └── README.md                    # Module documentation
 │
-├── Documentation/
-│   ├── START_HERE.md                           # Start here when resuming
-│   ├── CONTINUE_HERE.md                        # Continuation guide
-│   ├── PROJECT_STATUS.md                       # Current status
-│   ├── IMPLEMENTATION_SUMMARY.md               # Implementation details
-│   ├── RESEARCH_PAPER_PREPROCESSING_TECHNIQUES.md  # Research paper (8,500 words)
-│   ├── BEST_MODEL_GUIDE.md                     # Model selection guide
-│   ├── EFFICIENTNET_RESEARCH_EVIDENCE.md       # Research validation
-│   ├── comparative_table_preprocessing_glaucoma.md  # Technique comparison
-│   └── GITHUB_SETUP_GUIDE.md                   # This guide
+├── docs/                            # 📚 All documentation organized by category
+│   ├── README.md                    # Documentation overview
+│   ├── guides/                      # User guides & how-to documents
+│   │   ├── START_HERE.md            # Start here when resuming
+│   │   ├── CONTINUE_HERE.md         # Continuation guide
+│   │   ├── HOW_TO_ANALYZE_IMAGES.md # Image analysis guide
+│   │   ├── HOW_TO_CLASSIFY_IMAGES.md # Classification guide
+│   │   ├── BEST_MODEL_GUIDE.md      # Model selection guide
+│   │   ├── COMPLETE_USAGE_GUIDE.md  # Comprehensive guide
+│   │   └── README_CONTINUE_HERE.md  # Additional instructions
+│   ├── research/                    # Research & technical docs
+│   │   ├── RESEARCH_PAPER_PREPROCESSING_TECHNIQUES.md # Research paper (8,500 words)
+│   │   ├── EFFICIENTNET_RESEARCH_EVIDENCE.md  # Research validation
+│   │   └── comparative_table_preprocessing_glaucoma.md # Technique comparison
+│   ├── setup/                       # Setup & installation guides
+│   │   ├── SETUP_FOR_UZAIR221B.md   # User setup instructions
+│   │   ├── GITHUB_SETUP_GUIDE.md    # GitHub setup
+│   │   ├── GITHUB_SUCCESS.md        # GitHub success guide
+│   │   ├── SIMPLE_GITHUB_UPLOAD_INSTRUCTIONS.md
+│   │   ├── UPLOAD_TO_GITHUB.md      # Upload guide
+│   │   └── AUTO_SYNC_INSTRUCTIONS.md # Auto-sync config
+│   └── project/                     # Project status & summaries
+│       ├── SYSTEM_SUMMARY.md        # System overview
+│       ├── PROJECT_STATUS.md        # Current status
+│       ├── IMPLEMENTATION_SUMMARY.md # Implementation details
+│       ├── FINAL_CHECKLIST.md       # Tasks checklist
+│       └── RESUME_PROMPT.txt        # Resumption prompts
 │
 ├── .gitignore                       # Git ignore file (images, models excluded)
 ├── README.md                        # This file
@@ -201,22 +218,38 @@ Install all: `pip install -r preprocessing/requirements.txt`
 
 ## 📚 Documentation
 
-Comprehensive documentation available:
+Comprehensive documentation organized in the `docs/` folder:
 
+### 📖 User Guides (`docs/guides/`)
 1. **START_HERE.md** - Quick start when resuming work
 2. **CONTINUE_HERE.md** - Step-by-step continuation guide
-3. **PROJECT_STATUS.md** - Complete project status
-4. **IMPLEMENTATION_SUMMARY.md** - Technical implementation details
-5. **RESEARCH_PAPER_PREPROCESSING_TECHNIQUES.md** - Full 8,500-word research paper
-6. **BEST_MODEL_GUIDE.md** - Model architecture guide
-7. **GITHUB_SETUP_GUIDE.md** - GitHub setup instructions
+3. **HOW_TO_ANALYZE_IMAGES.md** - Image analysis guide
+4. **HOW_TO_CLASSIFY_IMAGES.md** - Classification guide
+5. **BEST_MODEL_GUIDE.md** - Model architecture guide
+6. **COMPLETE_USAGE_GUIDE.md** - Comprehensive usage documentation
+
+### 🔬 Research Documentation (`docs/research/`)
+1. **RESEARCH_PAPER_PREPROCESSING_TECHNIQUES.md** - Full 8,500-word research paper
+2. **EFFICIENTNET_RESEARCH_EVIDENCE.md** - Research validation
+3. **comparative_table_preprocessing_glaucoma.md** - Technique comparison
+
+### ⚙️ Setup Guides (`docs/setup/`)
+1. **SETUP_FOR_UZAIR221B.md** - User setup instructions
+2. **GITHUB_SETUP_GUIDE.md** - GitHub setup instructions
+3. **AUTO_SYNC_INSTRUCTIONS.md** - Automatic sync configuration
+
+### 📊 Project Management (`docs/project/`)
+1. **PROJECT_STATUS.md** - Complete project status
+2. **SYSTEM_SUMMARY.md** - System overview
+3. **IMPLEMENTATION_SUMMARY.md** - Technical implementation details
+4. **FINAL_CHECKLIST.md** - Tasks checklist
 
 ---
 
 ## 🔬 Research Paper
 
 A comprehensive 8,500-word research paper is included:
-- **File:** `RESEARCH_PAPER_PREPROCESSING_TECHNIQUES.md`
+- **File:** `docs/research/RESEARCH_PAPER_PREPROCESSING_TECHNIQUES.md`
 - **Content:** Detailed analysis of all 9 techniques
 - **Tables:** 50+ quantitative result tables
 - **References:** 10 primary sources
@@ -304,7 +337,7 @@ This project is part of PhD research on glaucoma detection.
 - EfficientNet + MRFO: Up to 100% accuracy (EKB Journals)
 - Multiple studies: 95-100% accuracy range (2020-2025)
 
-**See:** `EFFICIENTNET_RESEARCH_EVIDENCE.md` for details
+**See:** `docs/research/EFFICIENTNET_RESEARCH_EVIDENCE.md` for details
 
 ---
 
@@ -339,7 +372,7 @@ This project is part of PhD research on glaucoma detection.
 **Issue: "Model accuracy too low"**
 → Check: Data quality, balanced classes, enough training data
 
-**Full troubleshooting:** See `CONTINUE_HERE.md`
+**Full troubleshooting:** See `docs/guides/CONTINUE_HERE.md`
 
 ---
 
@@ -376,15 +409,15 @@ python preprocessing/test_pipeline.py
 ## 🚀 Getting Started
 
 ### New Users:
-1. Read `START_HERE.md`
-2. Follow `CONTINUE_HERE.md`
+1. Read `docs/guides/START_HERE.md`
+2. Follow `docs/guides/CONTINUE_HERE.md`
 3. Install dependencies
 4. Add your images
 5. Train model
 
 ### Returning Users:
 1. `git pull` to get latest changes
-2. Open `PROJECT_STATUS.md` to see updates
+2. Open `docs/project/PROJECT_STATUS.md` to see updates
 3. Continue your work
 
 ---
